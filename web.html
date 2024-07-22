@@ -216,7 +216,7 @@
                 <a href="" class="btn1" data-url="projects/project6.html">Read More</a>
             </div>
         </div>
-        <div class="projects">
+        <!-- <div class="projects">
             <img src="./img/shutterstock_1817240699.jpg" alt="">
             <div class="pro-head">
                 <h5>NEW</h5>
@@ -225,14 +225,14 @@
                 <a href="" class="btn1">Github</a>
                 <a href="" class="btn1">Read More</a>
             </div>
-        </div>
+        </div> -->
     </div>
 <img src="./img/angle-right.png" class="icon3">
 
 </section>
 <!-- Contact section -->
 <section id ="Contact">
-    <a href="" class="arrow"><img src="./img/arrow-up-sign-to-navigate.png" class="icon1"></a>
+    <a href="#About" class="arrow"><img src="./img/arrow-up-sign-to-navigate.png" class="icon1"></a>
     <p class="heading-p">Get in Touch</p>
     <h1 class="heading">Contact Me</h1>
     <div class="container contact-container">
@@ -347,7 +347,49 @@
                     behavior: 'smooth'
                 });
             });
-    });
+
+        const projectSection = document.getElementById('Projects');
+
+        let isDragging = false;
+        let startPosition = 0;
+        let currentTranslate = 0;
+        let prevTranslate = 0;
+        let animationID;
+
+        projectSection.addEventListener('touchstart', touchStart);
+        projectSection.addEventListener('touchend', touchEnd);
+        projectSection.addEventListener('touchmove', touchMove);
+
+        function touchStart(event) {
+            isDragging = true;
+            startPosition = event.touches[0].clientX;
+            animationID = requestAnimationFrame(animation);
+        }
+
+        function touchEnd() {
+            isDragging = false;
+            cancelAnimationFrame(animationID);
+            prevTranslate = currentTranslate;
+        }
+
+        function touchMove(event) {
+            if (isDragging) {
+                const currentPosition = event.touches[0].clientX;
+                const diff = currentPosition - startPosition;
+                currentTranslate = prevTranslate + diff;
+            }
+        }
+
+        function animation() {
+            setSliderPosition();
+            if (isDragging) requestAnimationFrame(animation);
+        }
+
+        function setSliderPosition() {
+            projectSection.style.transform = `translateX(${currentTranslate}px)`;
+        }
+
+            });
 
 </script>
 
