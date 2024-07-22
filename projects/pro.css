@@ -70,18 +70,18 @@ a:hover{
 
 img{
     width: 100%;
-    display: block;
+    /* display: block; */
 }
 
 nav{
     height: 5rem;
     /* position: fixed; */
     z-index: 1;
-    top: 0;
-    left: 0;
+    /* top: 0;
+    left: 0; */
     width: 100%;
-    display: grid;
-    place-items:center ;
+    display: flex;
+    /* place-items:center ; */
     /* background:rgb(247, 248, 248); */
     /* background: rgb(33,47,48); */
     background-image: url(./pro-img/a-stunning-minimalist-web-page-design-featuring-a--20735DU_RZaJVsw8B4SHag-WIL4MMGaQHqyAMSDk22oLQ.jpeg);
@@ -128,41 +128,47 @@ nav{
 }
 
 header{
-    display: grid;
+    display: flex;
     margin-top: 2rem;
-    width: 80%;
+    /* width: 100%; */
     box-shadow: 2px 2px 10px rgba(6, 6, 6, 0.353);
     justify-content: center;
     margin-left:10%;
+    margin-right: 10%;
     margin-bottom: 2rem;
 }
 
 .project{
-    width: 100%;
-    max-width: 100%;
+    /* width: 100%; */
+    /* max-width: 100%; */
     display:grid;
     justify-content: center;
-    margin-left: 2rem;
+    /* margin-left: 2rem; */
     margin-bottom: 2rem;
 }
 
 .project h1{
     padding-top: 2rem;
+    padding-left: 1REM;
 }
 .project p{
     padding-top: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
     display: flex;
-    flex-wrap: wrap;
-    margin-right: 4rem;
+    /* flex-wrap: wrap; */
+    /* margin-right: 1rem; */
 }
 
 .project h3{
     padding-top: 2rem;
     font-size: 22px;
+    padding-left: 1rem;
 }
 
 .technologies{
     padding-top: 1rem;
+    padding-left: 2rem;
 }
 
 .screen{
@@ -181,6 +187,7 @@ header{
     height: 300px;
     padding: 8px;
     border: 1px solid black;
+    padding-left: 2rem;
 }
 
 button{
@@ -213,5 +220,42 @@ footer p{
 @media (max-width:480px) {
     .logo{
         display: none;
+    }
+    nav{
+        width: 100%;
+    }
+}
+
+@media (max-width:400px) {
+    nav{
+        display: flex;
+        width: 100%;
+    }
+    .nav-container{
+        width: 100%;
+        display: flex;
+    }
+
+    .nav-links{
+        margin-right: 10px;
+    }
+
+    header{
+        /* background: none; */
+        margin: auto;
+        /* width: 100%; */
+        display: flex;
+        justify-content: center;
+    }
+
+    .screen img{
+        width: 300px;
+        height: 250px;
+        /* align-items: center; */
+        margin-left: 3rem;
+    }
+
+    footer{
+        width: 400px;
     }
 }
