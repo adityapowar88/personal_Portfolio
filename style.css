@@ -1227,4 +1227,38 @@ footer p{
     }
 
 }
+
+@media (max-width:300px) {
+
+    .basic-edu{
+        /* width: 100%; */
+        /* padding: 1px; */
+        gap: 5px;
+        /* margin-left:-10px; */
+    }
+
+    .Edu-rigth{
+        /* margin-left: -20px;
+        margin-right: 1px; */
+    }
+
+    #Education h1{
+        /* padding-left: 50%; */
+    }
+    .edu-box{
+        width: 300px;
+        padding: 1rem;
+    }
+
+    #About a{
+        position: absolute;
+        margin-right: -200px;
+    }
+
+    #Contact .arrow{
+        position: absolute;
+        margin-right: -200px;
+    }
+
+}
 /* media sizing end*/
