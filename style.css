@@ -141,8 +141,8 @@ img{
 }
 
 body{
-    /* zoom: 1; */
-    transform: none;
+    zoom: 1;
+
 }
 
 /* Nav bar */
