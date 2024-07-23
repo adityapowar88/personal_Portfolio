@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- <meta name="viewport" content="width=device-width, user-scalable=no"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
     <title>My Porfolio</title>
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
@@ -24,7 +26,7 @@
     <header>
         <div class="container header-container">
             <div class="header-left">
-                <img src="./img/be75d3c3-6d3d-4a42-9665-26df84232b54.png">
+                <img src="./img/be75d3c3-6d3d-4a42-9665-26df84232b54.png" >
             </div>
             <div class="header-right">
                 <p><b>Hello, I'm</b></p>
@@ -213,7 +215,7 @@
                 <h5>Employee Survey System</h5>
             </div>
             <div class="header-action-aria">
-                <a href="" class="btn1" >Github</a>
+                <a href="" class="btn1" data-url="projects/oops.html" >Github</a>
                 <a href="" class="btn1" data-url="projects/project6.html">Read More</a>
             </div>
         </div>
@@ -265,7 +267,7 @@
 <script>
     document.addEventListener('DOMContentLoaded', function () {
 
-
+        // scooll effet on header
         const scrollReveal = ScrollReveal({
             reset: true
         });
@@ -301,7 +303,7 @@
 
 
 
-        // Draggable slider
+        // Draggable slider  on project section
             const slider = document.querySelector('.projects-container');
             let isDown = false;
             let startX;
@@ -348,49 +350,88 @@
                     behavior: 'smooth'
                 });
             });
+        });
 
-        const projectSection = document.getElementById('.projects-container');
 
-        let isDragging = false;
-        let startPosition = 0;
-        let currentTranslate = 0;
-        let prevTranslate = 0;
-        let animationID;
 
-        projectSection.addEventListener('touchstart', touchStart);
-        projectSection.addEventListener('touchend', touchEnd);
-        projectSection.addEventListener('touchmove', touchMove);
 
-        function touchStart(event) {
-            isDragging = true;
-            startPosition = event.touches[0].clientX;
-            animationID = requestAnimationFrame(animation);
-        }
+// for touch screen
 
-        function touchEnd() {
-            isDragging = false;
-            cancelAnimationFrame(animationID);
-            prevTranslate = currentTranslate;
-        }
 
-        function touchMove(event) {
-            if (isDragging) {
-                const currentPosition = event.touches[0].clientX;
-                const diff = currentPosition - startPosition;
-                currentTranslate = prevTranslate + diff;
-            }
-        }
 
-        function animation() {
-            setSliderPosition();
-            if (isDragging) requestAnimationFrame(animation);
-        }
+document.addEventListener('DOMContentLoaded', function () {
+    const slider = document.querySelector('.projects-container');
+    let isDown = false;
+    let startX;
+    let scrollLeft;
 
-        function setSliderPosition() {
-            projectSection.style.transform = `translateX(${currentTranslate}px)`;
-        }
+    // Handle mouse events
+    slider.addEventListener('mousedown', (e) => {
+        isDown = true;
+        slider.classList.add('active');
+        startX = e.pageX - slider.offsetLeft;
+        scrollLeft = slider.scrollLeft;
+    });
 
-            });
+    slider.addEventListener('mouseleave', () => {
+        isDown = false;
+        slider.classList.remove('active');
+    });
+
+    slider.addEventListener('mouseup', () => {
+        isDown = false;
+        slider.classList.remove('active');
+    });
+
+    slider.addEventListener('mousemove', (e) => {
+        if (!isDown) return;
+        e.preventDefault();
+        const x = e.pageX - slider.offsetLeft;
+        const walk = (x - startX) * 2; 
+        slider.scrollLeft = scrollLeft - walk;
+    });
+
+    // Handle touch events for mobile view
+    let isTouchDown = false;
+    let startTouchX;
+    let touchScrollLeft;
+
+    slider.addEventListener('touchstart', (e) => {
+        isTouchDown = true;
+        startTouchX = e.touches[0].clientX - slider.offsetLeft;
+        touchScrollLeft = slider.scrollLeft;
+    });
+
+    slider.addEventListener('touchend', () => {
+        isTouchDown = false;
+    });
+
+    slider.addEventListener('touchmove', (e) => {
+        if (!isTouchDown) return;
+        const x = e.touches[0].clientX - slider.offsetLeft;
+        const walk = (x - startTouchX) * 2; 
+        slider.scrollLeft = touchScrollLeft - walk;
+    });
+
+    const leftArrow = document.querySelector('.icon2');
+    const rightArrow = document.querySelector('.icon3');
+
+    leftArrow.addEventListener('click', () => {
+        slider.scrollBy({
+            left: -300,
+            behavior: 'smooth'
+        });
+    });
+
+    rightArrow.addEventListener('click', () => {
+        slider.scrollBy({
+            left: 300,
+            behavior: 'smooth'
+        });
+    });
+});
+
+
 
 </script>
 

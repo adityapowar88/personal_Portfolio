@@ -259,3 +259,71 @@ footer p{
         width: 400px;
     }
 }
+
+@media (max-width:300px) {
+
+    nav{
+        display: flex;
+        width: 100%;
+    }
+    .nav-container{
+        width: 100%;
+        display: flex;
+    }
+
+    header{
+        /* background: none; */
+        /* margin: auto; */
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding-left: 2px;
+    }
+    header .project{
+        width: 300px;
+    }
+
+    header .project  p h1 h3{
+        width: 300px;
+        display: flex;
+        justify-content: center;
+    }
+
+    
+    header .project h3{
+        width: 300px;
+        display: flex;
+        justify-content: center;
+    }
+
+    header .technologies{
+        width: 300px;
+        padding-left: 3rem;
+    }
+
+    header .project p{
+        width: 300px;
+        display: flex;
+        justify-content: center;
+        padding-left: 3rem;
+    }
+
+    header .project h1{
+        width: 300px;
+        display: flex;
+        /* justify-content: center; */
+        padding-left: 2rem;
+    }
+
+    .screen img{
+        width: 250px;
+        height: 200px;
+        /* align-items: center; */
+        /* margin-left: 3rem; */
+    }
+
+    footer{
+        width: 300px;
+    }
+
+}
