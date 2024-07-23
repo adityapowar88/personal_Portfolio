@@ -142,6 +142,8 @@ img{
 
 body{
     zoom: 1;
+    transform: scale(1);
+    transform-origin: 0 0;
 }
 
 /* Nav bar */
@@ -1212,6 +1214,7 @@ footer p{
         display: flex;
         flex-direction: column;
         gap: 15px;
+        margin-left: 4rem;
     }
 
 
