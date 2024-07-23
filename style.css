@@ -136,14 +136,13 @@ img{
 
 .container{
     margin: 0 auto;
-    /* max-width: 85%; */
+    max-width: 1300px;
     width: 100% !important;
 }
 
 body{
-    zoom: 1;
-    transform: scale(1);
-    transform-origin: 0 0;
+    /* zoom: 1; */
+    transform: none;
 }
 
 /* Nav bar */
