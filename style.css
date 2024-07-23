@@ -136,8 +136,8 @@ img{
 
 .container{
     margin: 0 auto;
-    max-width: 1300px;
-    width: 100%;
+    max-width: 85%;
+    width: 100% !important;
 }
 
 body{
@@ -1214,17 +1214,12 @@ footer p{
         display: flex;
         flex-direction: column;
         gap: 15px;
-        margin-left: 4rem;
-    }
-
-
-    #Education h1{
-        /* padding-left: 50%; */
     }
     .edu-box{
-        width: 400px;
+        width: 100%;
         /* opacity:1 !important;   */
         padding: 1rem;
+
     }
 
     #About a{
