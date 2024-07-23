@@ -141,8 +141,10 @@ img{
 }
 
 body{
-    zoom: 1;
-
+    /* zoom: 1;
+    transform: scale(1);
+    transform-origin: 0 0; */
+    transform: none;
 }
 
 /* Nav bar */
@@ -1207,7 +1209,23 @@ footer p{
     }
 }
 @media (max-width:400px) {
+    .nav-container{
+        width: 400px;
+    }
 
+    .nav-links{
+        margin-left: 6rem;
+    }
+
+    .header-left{
+        margin-right:1rem ;
+    }
+    .logo {
+        display: none;
+    }
+    .logo2 {
+        display: none;
+    }
     .basic-edu{
         width: 100%;
         display: flex;
