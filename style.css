@@ -1227,6 +1227,9 @@ footer p{
     .header-left{
         margin-right:1rem ;
     }
+    .heading-about{
+        margin-right: 2rem;
+    }
     .logo {
         display: none;
     }
@@ -1259,7 +1262,6 @@ footer p{
 }
 
 @media (max-width:300px) {
-
     .Edu-container{
         width: 100%;
         overflow: visible;
