@@ -9,6 +9,8 @@
     outline: none;
     scroll-behavior: smooth;
     letter-spacing: .4px;
+    /* transform: none !important; */
+
 }
 :root{
     --color-black:#000000;
