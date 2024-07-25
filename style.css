@@ -141,10 +141,15 @@ img{
 }
 
 body{
-    /* zoom: 1;
-    transform: scale(1);
+    margin: 0;
+    padding: 0;
+    zoom: 1 !important; 
+    /* transform: scale(1);
     transform-origin: 0 0; */
-    transform: none;
+    /* transform: none; */
+
+    transform: none !important;
+    transform-origin: none !important;
 }
 
 /* Nav bar */
