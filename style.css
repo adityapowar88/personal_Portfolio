@@ -1130,17 +1130,16 @@ footer p{
 
     .projects-container{
         width: 100%;
-        max-width:100%;
         display: grid;
         grid-auto-flow: column;
         /* grid-template-columns:repeat(1,260px); */
         grid-auto-columns: calc((100%/2));
         gap: 25px;
-        padding: 35px;
+        padding: 40px;
         padding-left: 10px;
         /* padding-right: 180px; */
         justify-content:flex-start;
-        margin-top: -30px;
+        /* margin-top: -30px; */
         margin-left: 1rem;
         overflow:hidden ;
         scroll-behavior: smooth;
@@ -1201,30 +1200,43 @@ footer p{
     
     header{
         width: 100%;
-        /* height: 100%; */
     }
     .header-container{
         grid-template-columns: 1fr;
         padding-left: 1rem;
     }
     .header-left {
-        padding-right: 12rem;
+        padding-right: 14rem;
+    
     }
     .header-right {
-        margin-left: 80px;
+        margin-left: 5rem;
     }
+
     .about-container{
         width: 100%;
         padding-top: 1rem;
+        margin-left: 1px;
+        margin-top: 1px;
     }
 
     .about-container .about-rigth{
         padding-top: 1px;
         /* padding-bottom: -1rem; */
+        margin-bottom: -10px;
+        margin-right: 3rem;
     }
-    .experties-container .arrow{
-        padding-bottom: 1px;
-        margin-right: 5px;
+
+    .fancy-border-radius{
+        margin-left: -10px;
+    }
+
+    .fancy-border-radius p{
+        margin-left: 2rem;
+    }
+    .arrow{
+        padding-left: 2rem;
+
     }
     .nav-links{
         margin-left: 2rem;
@@ -1238,12 +1250,17 @@ footer p{
     }
     .experties-container{
         width: 100%;
-        padding-top: 1px;
+        /* padding-top: 1px; */
+        margin-top: 1px;
     }
 
     .experties-container .arrow{
-        margin-right:-15px;
-        padding-bottom: 1rem;
+        margin-right:-20px;
+        padding-bottom: 2rem;
+    }
+
+    .experties-container .heading-pp2{
+        width: 100%;
     }
 
     .Edu-container{
@@ -1264,15 +1281,69 @@ footer p{
 
     .edu-box{
         width: 100%; /* Ensure full width */
-        padding: 1rem;
+        /* padding: 1rem; */
         opacity: 1 !important; /* Ensure visibility */
         box-sizing: border-box;
+    }
+
+    .projects-container{
+        width: 100%;
+        display: grid;
+        grid-auto-flow: column;
+        /* grid-template-columns:repeat(1,260px); */
+        grid-auto-columns: calc((130%/2));
+        gap: 25px;
+        padding: 50px;
+        padding-left: 10px;
+        /* padding-right: 180px; */
+        justify-content:flex-start;
+        /* margin-top: -30px; */
+        margin-left: 1rem;
+        overflow:hidden ;
+        scroll-behavior: smooth;
+    }
+
+    .projects{
+        /* padding-bottom: 2rem; */
+        width: 100%;
+        padding-top: 1rem;
+        /* padding-bottom: 1px; */
+        transition: transform 0.2s;
+    }
+
+    .icon3{
+        margin-top: -318px;
+    }
+
+    .contact-container{
+        width: 100%;
+
+    }
+
+    .email{
+        width: 100%;
+        /* align-items: start; */
+    }
+
+    .linkedin{
+        width: 100%;
+        /* align-items: start; */
+    }
+
+    footer{
+        width: 100%;
     }
 
     footer .nav-links{
         margin-left: 1rem;
     }
 }
+
+
+
+
+
+
 
 @media (max-width:400px) {
     .logo {
@@ -1370,14 +1441,34 @@ footer p{
         align-items: start;
     }
 
-
     .projects-container{
         width: 100%;
-        /* margin-left: 1px; */
+        display: grid;
+        grid-auto-flow: column;
+        /* grid-template-columns:repeat(1,260px); */
+        grid-auto-columns: calc((83%/1));
+        gap: 25px;
+        padding: 50px;
+        padding-left: 10px;
+        /* padding-right: 180px; */
+        justify-content:flex-start;
+        /* margin-top: -30px; */
+        margin-left: 1rem;
+        overflow:hidden ;
+        scroll-behavior: smooth;
+    }
+
+    .projects{
+        /* padding-bottom: 2rem; */
+        width: 100%;
+        padding-top: 1rem;
+        /* padding-bottom: 1px; */
+        transition: transform 0.2s;
+
     }
 
     .icon3{
-        margin-top: -280px;
+        margin-top: -315px;
     }
 
     footer{
