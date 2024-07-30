@@ -1013,7 +1013,7 @@ footer p{
 /* Media 680px */
 @media(max-width:668px){
     herder{
-        width: 650px;
+        width: 100%;
     }
 
     .header-container{
@@ -1028,11 +1028,11 @@ footer p{
 
 @media(max-width:600px){
     #nav{
-        width: 600px;
+        width: 100%;
     }
     header{
-        width: 600px;
-        height: 100%;
+        width: 100%;
+        /* height: 100%; */
     }
     .header-container{
         grid-template-columns: 1fr;
@@ -1046,10 +1046,10 @@ footer p{
     }
 
     #About{
-        width: 600px;
+        width: 100%;
     }
     .about-container{
-        width: 600px;
+        width: 100%;
         display: grid;
         grid-template-columns:repeat(1,1fr);
         justify-content: center;
@@ -1057,10 +1057,13 @@ footer p{
 
     .about-container .fancy-border-radius{
         justify-content: center;
-        width: 580px;
+        /* width: 580px; */
+        width: 100%;
+
     }
     .about-container .about-rigth{
-        width: 580px;
+        /* width: 580px; */
+        width: 100%;
         justify-content: center;
         margin-left: 2rem;
     }
@@ -1106,7 +1109,7 @@ footer p{
     }
 
     #Education{
-        width: 600px;
+        width: 100%;
         padding-top: 1px;
     }
 
@@ -1120,13 +1123,13 @@ footer p{
     }
 
     #Projects{
-        width: 600px;
+        width: 100%;
         padding-top: 1px;
     }
 
     .projects-container{
         width: 100%;
-        max-width: 100%;
+        max-width:100%;
         display: grid;
         grid-auto-flow: column;
         /* grid-template-columns:repeat(1,260px); */
@@ -1177,12 +1180,12 @@ footer p{
     }
 
     #Contact{
-        width: 600px;
+        width: 100%;
         padding-top: 1px;
     }
 
     footer{
-        width: 600px;
+        width: 100%;
     }
 }
 
@@ -1190,13 +1193,20 @@ footer p{
 @media (max-width:480px) {
 
     .nav-container{
-        width: 480px;
+        width: 100%;
     }
     .about-container{
-        width: 480px;
+        width: 100%;
+
+    }
+    .nav-links{
+        margin-left: 6rem;
 
     }
     .logo{
+        display: none;
+    }
+    .logo2{
         display: none;
     }
     .experties-container{
@@ -1211,13 +1221,14 @@ footer p{
     #Contact .arrow{
         margin-right:-140px;
     }
-    footer{
-        width: 600px;
+    footer .nav-links{
+        margin-left: 1rem;
     }
 }
+
 @media (max-width:400px) {
     .nav-container{
-        width: 400px;
+        width: 100%;
     }
 
     .nav-links{
@@ -1250,13 +1261,17 @@ footer p{
     }
 
     #About a{
-        position: absolute;
-        margin-right: -200px;
+        display: none;
+
+        /* position: absolute;
+        margin-right: -200px; */
     }
 
     #Contact .arrow{
-        position: absolute;
-        margin-right: -200px;
+        display: none;
+
+        /* position: absolute;
+        margin-right: -200px; */
     }
 
 }
@@ -1285,8 +1300,10 @@ footer p{
     }
 
     #About a{
-        position: absolute;
-        margin-right: -300px;
+        display: none;
+
+        /* position: absolute;
+        margin-right: -300px; */
     }
 
     .heading-about{
@@ -1294,8 +1311,9 @@ footer p{
     }
 
     #Contact .arrow{
-        position: absolute;
-        margin-right: -300px;
+        display: none;
+        /* position: absolute;
+        margin-right: -300px; */
     }
 
 }
