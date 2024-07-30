@@ -1347,14 +1347,17 @@ footer p{
     .logo2 {
         display: none;
     }
+
     .nav-container{
         width: 100%;
     }
 
     .nav-links{
-        width: 100%;
-        gap: 1rem;
-        margin-left:1rem;
+        /* display: none; */
+        /* width:100%; */
+        gap: 15px;
+        margin-left:15px;
+        /* padding: 1rem; */
     }
 
     .header-container{
@@ -1368,7 +1371,7 @@ footer p{
         margin-left: 5rem;
     }
     .header-right{
-        margin-left: 40px;
+        margin-left: 2rem;
     }
 
 
@@ -1471,10 +1474,11 @@ footer p{
     }
 
     footer .nav-links{
-        /* margin-left: 1px; */
+        margin-left: 1px;
     }
-
 }
+
+
 
 @media (max-width:300px) {
 
