@@ -1366,6 +1366,7 @@ footer p{
 
     .header-left {
         padding-right: 5rem;
+        /* margin-left: 6rem; */
     }
     .header-left img{
         margin-left: 5rem;
@@ -1471,13 +1472,15 @@ footer p{
 
     footer{
         width: 100%;
+        /* margin-top: 2rem; */
     }
 
     footer .nav-links{
         margin-left: 1px;
+        margin-top: 8rem;
+        padding-bottom: 1.5rem;
     }
 }
-
 
 
 @media (max-width:300px) {
