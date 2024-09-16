@@ -1198,6 +1198,7 @@ footer p{
     }
 }
 
+/* media section 480px */
 
 @media (max-width:480px) {
     #nav{
@@ -1350,6 +1351,9 @@ footer p{
     }
 }
 
+
+/* media section 450px */
+
 @media (max-width:450px){
         .logo {
             display: none;
@@ -1363,8 +1367,6 @@ footer p{
         }
     
         .nav-links{
-            /* display: none; */
-            /* display: none; */
             /* width:100%; */
             gap: 15px;
             margin-left:27px;
@@ -1499,6 +1501,8 @@ footer p{
         }
     
     }
+
+/* media section 420px */
 
 @media (max-width:420px){
 
@@ -1646,6 +1650,7 @@ footer p{
 
 }
 
+/* media section 400px */
 
 @media (max-width:400px) {
     .logo {
@@ -1723,7 +1728,6 @@ footer p{
     .edu-box{
         width: 100%;
         padding: 1rem;
-
     }
 
     #Contact{
@@ -1790,6 +1794,8 @@ footer p{
         padding-bottom: 1.5rem;
     }
 }
+
+/* media section 380px */
 
 @media (max-width:380px){
     .nav-container{
@@ -1858,6 +1864,9 @@ footer p{
         font-size: 14px;
     }
 }
+
+
+/* media section 360px */
 
 @media (max-width:360px){
 .logo {
@@ -2048,9 +2057,7 @@ footer .nav-links{
 
 }
 
-
-
-
+/* media section 320px */
 
 @media (max-width:320px){
     .logo {
@@ -2083,7 +2090,6 @@ footer .nav-links{
     .header-left {
         width: 80%;
         margin-right: 1rem;
-
     }
 
     .header-left img{
@@ -2166,7 +2172,6 @@ footer .nav-links{
         display: flex;
         justify-content: space-between;
         /* gap: 1rem; */
-        
     }
     
     .experties-container a{
@@ -2275,9 +2280,7 @@ footer .nav-links{
     }
 }
 
-
-
-
+/* media section 300px */
 
 @media (max-width:300px) {
 
@@ -2476,9 +2479,7 @@ footer .nav-links{
 
     .icon2{
         margin-left: 3px;
-    
     }
-
 
     .arrow{
         display: none;
@@ -2502,4 +2503,5 @@ footer .nav-links{
     }
 
 }
-/* media sizing end*/
+
+/* media sizing end */
