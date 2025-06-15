@@ -92,8 +92,8 @@ a:hover{
     color: var(--color-white);
 }
 .btn-dark{
-    color: var(--color-white);
-    background: var(--color-dark);
+    /* color: var(--color-white); */
+    /* background: var(--color-dark); */
     text-decoration: none;
 }
 .btn-dark:hover{
@@ -122,7 +122,7 @@ a:hover{
 .btn1:hover{
     /* background: var(--color-dark); */
     /* color: var(--color-dark); */
-    color: #9adf91;
+    /* color: #9adf91; */
     color:  #38bdf8;
 }
 
